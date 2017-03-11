@@ -8,7 +8,7 @@ When you can't (or don't want to) use javascript libraries like jQuery, Moo Tool
 0.2
 
 #### Demo
-http://www.bulgaria-web-developers.com/projects/javascript/serialize/
+https://projects.zinoui.com/serialize/
 
 #### License
-Dual-licensed under MIT and GPL
+form-serialize is licensed under the MIT license.

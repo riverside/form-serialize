@@ -1,4 +1,13 @@
-function serialize(form) {
+/**
+ * form-serialize v0.2.0
+ *
+ * Copyright 2017, Dimitar Ivanov (https://zinoui.com/)
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+ function serialize(form) {
 	if (!form || form.nodeName !== "FORM") {
 		return;
 	}
@@ -22,12 +31,12 @@ function serialize(form) {
 			case 'radio':
 				if (form.elements[i].checked) {
 					q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-				}						
+				}
 				break;
 			case 'file':
 				break;
 			}
-			break;			 
+			break;
 		case 'TEXTAREA':
 			q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
 			break;
