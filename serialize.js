@@ -1,5 +1,5 @@
 /**
- * form-serialize v0.2.0
+ * form-serialize v0.2.1
  *
  * Copyright 2017, Dimitar Ivanov (https://zinoui.com/)
  *
@@ -25,6 +25,18 @@
 			case 'button':
 			case 'reset':
 			case 'submit':
+			case 'color':
+			case 'date':
+			case 'datetime-local':
+			case 'email':
+			case 'month':
+			case 'number':
+			case 'range':
+			case 'search':
+			case 'tel':
+			case 'time':
+			case 'url':
+			case 'week':
 				q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
 				break;
 			case 'checkbox':

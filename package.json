@@ -1,0 +1,18 @@
+{
+	"name": "form-serialize",
+	"version: "0.2.1",
+	"description": "HTML form serialization",
+	"keywords": ["javascript", "form", "serialize", "html"],
+	"homepage": "https://github.com/riverside/form-serialize",
+	"bugs": "https://github.com/riverside/form-serialize/issues",
+	"license": "MIT",
+	"author": {
+		"name": "Dimitar Ivanov",
+		"url": "http://zinoui.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/riverside/form-serialize.git"
+	},
+	"main": "serialize.js"
+}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript form serialize</title>
+	<style>
+	body{
+		font-size: 12px;
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+	form p{
+		margin: 0 0 10px 0;
+	}
+	form p:after{
+		content: "";
+		clear: both;
+		display: table;
+		zoom: 1;
+	}
+	form p label{
+		float: left;
+		font-weight: bold;
+		width: 150px;
+	}
+	form p label[for]{
+		float: none;
+		font-weight: normal;
+		width: auto;
+	}
+	#container{
+		width: 600px;
+		margin: 0 auto;
+	}
+	#serialize{
+		background-color: #D6D192;
+		border: dashed 2px #BA7948;
+		color: #000;
+		padding: 10px;
+		word-wrap: break-word;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="container">
+	
+		<h1>Javascript Form Serialize</h1>
+
+		<form action="" method="get">
+			<input type="hidden" name="id" value="32" />
+			<p>
+				<label>Full Name</label>
+				<input type="text" name="fullname" value="Dimitar Ivanov" />
+			</p>
+			<p>
+				<label>Password</label>
+				<input type="password" name="password" value="Krazie Bone" />
+			</p>
+			
+			<p>
+				<label>color</label>
+				<input type="color" name="color" value="#FFCC00">
+			</p>
+			<p>
+				<label>date</label>
+				<input type="date" name="date" value="2017-04-17">
+			</p>
+			<p>
+				<label>datetime-local</label>
+				<input type="datetime-local" name="datetime-local" value="2017-04-17T10:40">
+			</p>
+			<p>
+				<label>E-Mail</label>
+				<input type="email" name="email" value="mailbox@domain.com" />
+			</p>
+			<p>
+				<label>month</label>
+				<input type="month" name="month" value="2017-04">
+			</p>
+			<p>
+				<label>number</label>
+				<input type="number" name="number" value="7">
+			</p>
+			<p>
+				<label>range</label>
+				<input type="range" name="range" value="25" min="0" max="50" step="1">
+			</p>
+			<p>
+				<label>search</label>
+				<input type="search" name="search" value="Type to search">
+			</p>
+			<p>
+				<label>Phone</label>
+				<input type="tel" name="phone" value="+359899858120" />
+			</p>
+			<p>
+				<label>time</label>
+				<input type="time" name="time" value="10:40">
+			</p>
+			<p>
+				<label>url</label>
+				<input type="url" name="url" value="http://www.domain.com/">
+			</p>
+			<p>
+				<label>week</label>
+				<input type="week" name="week" value="2017-W15">
+			</p>
+
+			<p>
+				<label>File</label>
+				<input type="file" name="attachment" />
+			</p>
+			<p>
+				<label>Gender</label>
+				<select name="gender">
+					<option value="male" selected="selected">Male</option>
+					<option value="female">Female</option>
+				</select>
+			</p>
+			<p>
+				<label>Job title</label>
+				<select name="job[]" multiple="multiple" size="6">
+					<option value="java_dev">Java developer</option>
+					<option value="web_dev" selected="selected">Web Developer</option>
+					<option value="ui_engineer" selected="selected">UI Engineer</option>
+					<option value="db_admin">DB Administrator</option>
+					<option value="senior_php" selected="selected">Senior PHP programmer</option>
+					<option value="sap_engineer">SAP Engineer</option>
+				</select>
+			</p>
+			<p>
+				<label>Do you freelance?</label>
+				<input type="radio" name="wish" value="yes" /> Yes
+				<input type="radio" name="wish" value="no" checked="checked" /> No
+			</p>
+			<p>
+				<label>Favorite sport</label>
+				<input type="checkbox" name="sport[]" id="basketball" value="basketball" checked="checked" /> <label for="basketball">Basketball</label><br />
+				<label>&nbsp;</label>
+				<input type="checkbox" name="sport[]" id="football" value="football" checked="checked" /> <label for="football">Football</label><br />
+				<label>&nbsp;</label>
+				<input type="checkbox" name="sport[]" id="volleyball" value="volleyball" /> <label for="volleyball">Volleyball</label><br />
+				<label>&nbsp;</label>
+				<input type="checkbox" name="sport[]" id="ice_hockey" value="ice_hockey" checked="checked" /> <label for="ice_hockey">Ice Hockey</label><br />
+				<label>&nbsp;</label>
+				<input type="checkbox" name="sport[]" id="baseball" value="baseball" /> <label for="baseball">Baseball</label>
+			</p>
+			<p>
+				<label>Notes</label>
+				<textarea name="notes">Form serialize in
+pure javascript</textarea>
+			</p>
+			<p>
+				<label>Did you agree with our terms of use?</label>
+				<input type="checkbox" name="agree" value="T" checked="checked" />
+			</p>
+			<p>
+				<button type="submit">Serialize form</button>
+			</p>
+		</form>
+		
+		<p id="serialize"></p>
+			
+	</div>
+
+	<script src="../serialize.min.js"></script>
+	<script>
+	document.querySelector("form").addEventListener("submit", function (event) {
+		document.getElementById("serialize").innerHTML = serialize(this);
+		event.preventDefault();
+	});
+	</script>		
+</body>
+</html>
