@@ -1,5 +1,5 @@
 /**
- * form-serialize v1.0.0x
+ * form-serialize v1.0.0
  *
  * Copyright (c) 2019, Dimitar Ivanov
  * https://github.com/riverside/form-serialize
