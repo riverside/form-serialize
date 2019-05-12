@@ -1,6 +1,6 @@
 {
 	"name": "@riverside/form-serialize",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "HTML form serialization",
 	"keywords": ["javascript", "form", "serialize", "html"],
 	"homepage": "https://github.com/riverside/form-serialize",
