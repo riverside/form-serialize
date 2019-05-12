@@ -7,10 +7,6 @@ When you can't (or don't want to) use javascript libraries like jQuery, Moo Tool
 ```
 npm install @riverside/form-serialize
 ```
-- bower
-```
-bower install form-serialize
-```
 - browser
 ```html
 <script src="serialize.min.js"></script>
