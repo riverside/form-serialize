@@ -1,5 +1,5 @@
 {
-	"name": "form-serialize",
+	"name": "@riverside/form-serialize",
 	"version": "1.0.0",
 	"description": "HTML form serialization",
 	"keywords": ["javascript", "form", "serialize", "html"],
