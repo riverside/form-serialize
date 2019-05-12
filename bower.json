@@ -1,0 +1,23 @@
+{
+  "name": "form-serialize",
+  "description": "HTML form serialization",
+  "main": "serialize.js",
+  "authors": [
+    {"name": "Dimitar Ivanov", "homepage": "https://twitter.com/DimitarIvanov"}
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "form",
+    "serialize",
+    "html"
+  ],
+  "homepage": "https://github.com/riverside/form-serialize",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
