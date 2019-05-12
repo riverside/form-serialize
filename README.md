@@ -5,7 +5,7 @@ When you can't (or don't want to) use javascript libraries like jQuery, Moo Tool
 #### Installation
 - npm
 ```
-npm install form-serialize
+npm install @riverside/form-serialize
 ```
 - bower
 ```
@@ -18,7 +18,7 @@ bower install form-serialize
 #### How to use
 - node.js
 ```
-const serialize = require('form-serialize');
+const serialize = require('@riverside/form-serialize');
 console.log(serialize(form));
 ```
 - browser
