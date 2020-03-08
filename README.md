@@ -1,6 +1,8 @@
 # form-serialize
 Vanilla JavaScript form serialization
 
+[![NPM](https://nodei.co/npm/form-serialize.png)](https://nodei.co/npm/form-serialize/)
+
 When you can't (or don't want to) use javascript libraries like jQuery, Moo Tools, Dojo, YUI or Prototype, and their built-in functions, but still need a quick and easy way to serialize forms.
 #### Installation
 - npm
