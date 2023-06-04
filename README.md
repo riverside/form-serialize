@@ -26,7 +26,6 @@ console.log(serialize("#form"));
 console.log(serialize(document.querySelector("#form")));
 </script>
 ```
-#### Demo
-https://projects.zinoui.com/serialize/
+
 #### License
 form-serialize is licensed under the MIT license.
